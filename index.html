@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master - Multiple Choice Questions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Quiz Master</h1>
+            <p class="subtitle">Test Your Knowledge</p>
+        </div>
+
+        <div class="quiz-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="question-counter">
+                <span id="questionNumber">1</span> / <span id="totalQuestions">0</span>
+            </div>
+
+            <div id="quizContent">
+                <h2 id="questionText" class="question"></h2>
+                <div id="optionsContainer" class="options-container"></div>
+                
+                <div id="feedbackBox" class="feedback-box hidden">
+                    <p id="feedbackText"></p>
+                </div>
+
+                <div class="button-container">
+                    <button id="prevBtn" class="btn btn-secondary">← Previous</button>
+                    <button id="nextBtn" class="btn btn-primary">Next →</button>
+                </div>
+            </div>
+
+            <div id="resultsScreen" class="results-screen hidden">
+                <h2>Quiz Complete! 🎉</h2>
+                <div class="score-circle">
+                    <p class="score-text" id="scoreText">0/0</p>
+                    <p class="score-label">Correct Answers</p>
+                </div>
+                <p id="scorePercentage" class="score-percentage"></p>
+                <button id="restartBtn" class="btn btn-primary">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
