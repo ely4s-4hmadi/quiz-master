@@ -56,38 +56,6 @@ body {
     position: relative;
 }
 
-/* Watermark - Bottom Right */
-body::before {
-    content: 'by ely4s-4hmadi';
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-family: var(--font-mono);
-    font-size: 0.75em;
-    color: var(--color-electric-blue);
-    opacity: 0.15;
-    pointer-events: none;
-    z-index: 1;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
-
-/* Watermark - Top Left (subtle) */
-body::after {
-    content: 'Quiz Master by ely4s';
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    font-family: var(--font-mono);
-    font-size: 0.65em;
-    color: var(--color-cyber-purple);
-    opacity: 0.08;
-    pointer-events: none;
-    z-index: 1;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-}
-
 /* ============================================
    CONTAINER & LAYOUT
    ============================================ */
